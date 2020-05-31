@@ -36,4 +36,17 @@
             </expected>
         </service>
     </webMethodsTestCase>
+    <webMethodsTestCase name="MockedCase3">
+        <mock folder="DevOpsPackage" name="getName">
+            <pipeline filename="resources/test/xml/data/MockedCase3getNameOutput.xml"/>
+        </mock>
+        <service folder="DevOpsPackage" name="greet">
+            <input>
+                <file/>
+            </input>
+            <expected>
+                <file filename="resources/test/xml/data/MockedCase3Output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
 </webMethodsTestSuite>
