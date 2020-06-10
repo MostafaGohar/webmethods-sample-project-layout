@@ -10,4 +10,17 @@
             </expected>
         </service>
     </webMethodsTestCase>
+    <webMethodsTestCase name="MockCase">
+        <mock folder="DevOpDemoWM" name="getName">
+            <pipeline filename="resources/test/xml/data/getNameMockCaseOutput.xml"/>
+        </mock>
+        <service folder="DevOpDemoWM" name="greet">
+            <input>
+                <file/>
+            </input>
+            <expected>
+                <file filename="resources/test/xml/data/MockCaseOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
 </webMethodsTestSuite>
