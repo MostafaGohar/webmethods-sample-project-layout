@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="DevOpsDemoWMSuite">
+    <webMethodsTestCase name="BasicCase">
+        <service folder="DevOpDemoWM" name="greet">
+            <input>
+                <file/>
+            </input>
+            <expected>
+                <file filename="resources/test/xml/data/BasicCaseOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
