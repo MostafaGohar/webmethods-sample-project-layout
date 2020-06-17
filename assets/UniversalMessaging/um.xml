@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NirvanaRealm name="umserver9000" exportDate="2020-06-17Z" comment="Realm configuration from umserver9000" version="10.1" buildInfo="10.1.0.0.96243">
+    <RealmConfiguration>
+        <ConfigGroup name="Audit Settings">
+            <ConfigItem name="ChannelACL" value="true"/>
+            <ConfigItem name="ChannelFailure" value="true"/>
+            <ConfigItem name="ChannelMaintenance" value="false"/>
+            <ConfigItem name="ChannelSuccess" value="false"/>
+            <ConfigItem name="DataGroup" value="false"/>
+            <ConfigItem name="DataGroupFailure" value="false"/>
+            <ConfigItem name="DataStream" value="false"/>
+            <ConfigItem name="Group" value="true"/>
+            <ConfigItem name="GroupMembers" value="true"/>
+            <ConfigItem name="InterfaceManagement" value="true"/>
+            <ConfigItem name="JoinFailure" value="true"/>
+            <ConfigItem name="JoinMaintenance" value="true"/>
+            <ConfigItem name="JoinSuccess" value="false"/>
+            <ConfigItem name="QueueACL" value="true"/>
+            <ConfigItem name="QueueFailure" value="true"/>
+            <ConfigItem name="QueueMaintenance" value="false"/>
+            <ConfigItem name="QueueSuccess" value="false"/>
+            <ConfigItem name="RealmACL" value="true"/>
+            <ConfigItem name="RealmFailure" value="true"/>
+            <ConfigItem name="RealmMaintenance" value="true"/>
+            <ConfigItem name="RealmSuccess" value="false"/>
+            <ConfigItem name="SnoopStream" value="false"/>
+        </ConfigGroup>
+        <ConfigGroup name="Client Timeout Values">
+            <ConfigItem name="EventTimeout" value="60000"/>
+            <ConfigItem name="HighWaterMark" value="3000"/>
+            <ConfigItem name="LowWaterMark" value="1000"/>
+            <ConfigItem name="QueueAccessWaitLimit" value="200"/>
+            <ConfigItem name="QueueBlockLimit" value="500"/>
+            <ConfigItem name="QueuePushWaitLimit" value="200"/>
+            <ConfigItem name="TransactionLifeTime" value="20000"/>
+        </ConfigGroup>
+        <ConfigGroup name="Cluster Config">
+            <ConfigItem name="BufferSize" value="8192"/>
+            <ConfigItem name="ClientQueueSize" value="1000"/>
+            <ConfigItem name="ClientQueueWindow" value="100"/>
+            <ConfigItem name="ClientStateDelay" value="5000"/>
+            <ConfigItem name="DisableHTTPConnections" value="true"/>
+            <ConfigItem name="DisconnectWait" value="30000"/>
+            <ConfigItem name="DisconnectWhenNotReady" value="false"/>
+            <ConfigItem name="EnableMulticast" value="true"/>
+            <ConfigItem name="EnableSites" value="true"/>
+            <ConfigItem name="EnableStoreRecoveryRetry" value="true"/>
+            <ConfigItem name="EnginePipelineSize" value="2"/>
+            <ConfigItem name="FilterEventsDuringRecovery" value="true"/>
+            <ConfigItem name="FormationTimeout" value="120000"/>
+            <ConfigItem name="HeartBeatInterval" value="120000"/>
+            <ConfigItem name="InitialConnectionTimeout" value="30000"/>
+            <ConfigItem name="IsCommittedDelay" value="5000"/>
+            <ConfigItem name="MasterRequestTimeout" value="60000"/>
+            <ConfigItem name="MasterVoteDelay" value="10000"/>
+            <ConfigItem name="MasterWaitTimeout" value="10000"/>
+            <ConfigItem name="PublishQueueEnabled" value="true"/>
+            <ConfigItem name="QueueSize" value="1000"/>
+            <ConfigItem name="SecureHandshake" value="true"/>
+            <ConfigItem name="SeperateLog" value="false"/>
+            <ConfigItem name="StateChangeScan" value="60000"/>
+            <ConfigItem name="SyncPingSize" value="1000"/>
+            <ConfigItem name="TransactionSync" value="true"/>
+        </ConfigGroup>
+        <ConfigGroup name="Comet Config">
+            <ConfigItem name="BufferSize" value="5120"/>
+            <ConfigItem name="EnableLogging" value="false"/>
+            <ConfigItem name="Timeout" value="60000"/>
+        </ConfigGroup>
+        <ConfigGroup name="Connection Config">
+            <ConfigItem name="AllowBufferReuse" value="true"/>
+            <ConfigItem name="BufferManagerCount" value="16"/>
+            <ConfigItem name="BufferPoolSize" value="100"/>
+            <ConfigItem name="BufferQueueSize" value="100"/>
+            <ConfigItem name="BufferSize" value="102400"/>
+            <ConfigItem name="CometReadTimeout" value="20000"/>
+            <ConfigItem name="ConnectionDelay" value="60000"/>
+            <ConfigItem name="EnablePriorityMessaging" value="false"/>
+            <ConfigItem name="HandshakeTimeout" value="5000"/>
+            <ConfigItem name="IdleDriverTimeout" value="300000"/>
+            <ConfigItem name="IdleSessionTimeout" value="300000"/>
+            <ConfigItem name="KeepAlive" value="60000"/>
+            <ConfigItem name="MaxBufferSize" value="20971520"/>
+            <ConfigItem name="MaxBufferSizeClientSideCheck" value="true"/>
+            <ConfigItem name="MaxNoOfConnections" value="-1"/>
+            <ConfigItem name="MaxWriteCount" value="30"/>
+            <ConfigItem name="NIOSelectArray" value="false"/>
+            <ConfigItem name="NetworkMonitorThreads" value="4"/>
+            <ConfigItem name="PriorityQueueCount" value="10"/>
+            <ConfigItem name="PriorityReadSpinLockMaxConnections" value="2"/>
+            <ConfigItem name="PriorityReadSpinLockTime" value="500"/>
+            <ConfigItem name="PriorityReadType" value="1"/>
+            <ConfigItem name="QueueHighWaterMark" value="3000"/>
+            <ConfigItem name="QueueLowWaterMark" value="1000"/>
+            <ConfigItem name="ReadCount" value="10"/>
+            <ConfigItem name="UseDirectBuffering" value="true"/>
+            <ConfigItem name="WriteHandlerType" value="3"/>
+            <ConfigItem name="whEventThresholdCount" value="350"/>
+            <ConfigItem name="whEventThresholdTime" value="500"/>
+            <ConfigItem name="whMaxEventsBeforeFlush" value="100"/>
+            <ConfigItem name="whMaxEventsPerSecond" value="100000"/>
+            <ConfigItem name="whMaxTimeBetweenFlush" value="2"/>
+            <ConfigItem name="whPeakTrailDelay" value="1000"/>
+        </ConfigGroup>
+        <ConfigGroup name="Data Stream Config">
+            <ConfigItem name="FanoutTaskQueueSize" value="32"/>
+            <ConfigItem name="FanoutTraversalType" value="0"/>
+            <ConfigItem name="MaxSessionIdSize" value="14"/>
+            <ConfigItem name="MonitorTimer" value="10000"/>
+            <ConfigItem name="OffloadMulticastWrite" value="false"/>
+            <ConfigItem name="ParallelFanoutThreshold" value="50"/>
+            <ConfigItem name="SendInitialMapping" value="true"/>
+        </ConfigGroup>
+        <ConfigGroup name="DurableConfig">
+            <ConfigItem name="QueuedExtendedException" value="false"/>
+        </ConfigGroup>
+        <ConfigGroup name="Environment Config">
+            <ConfigItem name="AvailableProcessors" value="4"/>
+            <ConfigItem name="Embedded" value="false"/>
+            <ConfigItem name="InterRealmProtocolVersion" value="1"/>
+            <ConfigItem name="JavaVendor" value="Oracle Corporation"/>
+            <ConfigItem name="JavaVersion" value="1.8.0_141"/>
+            <ConfigItem name="NanosecondSupport" value="true"/>
+            <ConfigItem name="OSArchitecture" value="amd64"/>
+            <ConfigItem name="OSName" value="Windows Server 2008 R2"/>
+            <ConfigItem name="OSVersion" value="6.1"/>
+            <ConfigItem name="ProcessId" value="3524"/>
+            <ConfigItem name="ServerBuildDate" value="August 30 2017"/>
+            <ConfigItem name="ServerBuildNumber" value="Build 96243"/>
+            <ConfigItem name="ServerReleaseDetails" value="10.1.0.0.96243"/>
+            <ConfigItem name="ServerVersion" value="$Name: nirvana_10_1 $ - $Revision: 96243 $"/>
+            <ConfigItem name="TimerAdjustment" value="0"/>
+        </ConfigGroup>
+        <ConfigGroup name="Event Storage">
+            <ConfigItem name="ActiveDelay" value="1000"/>
+            <ConfigItem name="AutoDeleteScan" value="5000"/>
+            <ConfigItem name="AutoMaintainOnFileLimit" value="true"/>
+            <ConfigItem name="AutoMaintainSystemStores" value="true"/>
+            <ConfigItem name="AutoMaintenanceThreshold" value="50"/>
+            <ConfigItem name="CacheAge" value="60000"/>
+            <ConfigItem name="EnableBufferingKey" value="true"/>
+            <ConfigItem name="EnableStoreCaching" value="false"/>
+            <ConfigItem name="EnableStoreReadBuffering" value="true"/>
+            <ConfigItem name="IdleDelay" value="10000"/>
+            <ConfigItem name="JMSEngineAutoPurgeTime" value="5000"/>
+            <ConfigItem name="MaintenanceFileSizeThreshold" value="104857600"/>
+            <ConfigItem name="MaintenanceMemoryThreshold" value="104857600"/>
+            <ConfigItem name="PageSize" value="5000"/>
+            <ConfigItem name="QueueDeliveryPersistencePolicy" value="1"/>
+            <ConfigItem name="StoreReadBufferSize" value="16384"/>
+            <ConfigItem name="SyncBatchSize" value="50"/>
+            <ConfigItem name="SyncServerFiles" value="false"/>
+            <ConfigItem name="SyncTimeLimit" value="20"/>
+            <ConfigItem name="ThreadPoolSize" value="4"/>
+        </ConfigGroup>
+        <ConfigGroup name="Fanout Values">
+            <ConfigItem name="ConnectionGrouping" value="true"/>
+            <ConfigItem name="DelayPublishOnCapacity" value="true"/>
+            <ConfigItem name="HonourSharedDurableCapacity" value="true"/>
+            <ConfigItem name="IteratorWindowSize" value="100"/>
+            <ConfigItem name="JMSQueueMaxMultiplier" value="10"/>
+            <ConfigItem name="MaximumDelayInWrite" value="1"/>
+            <ConfigItem name="ParallelBatchSize" value="50"/>
+            <ConfigItem name="ParallelThreadPoolSize" value="2"/>
+            <ConfigItem name="ParallelThreshold" value="1"/>
+            <ConfigItem name="ParallelUseGlobalPool" value="true"/>
+            <ConfigItem name="PeakPublishDelay" value="1"/>
+            <ConfigItem name="PublishDelay" value="1"/>
+            <ConfigItem name="PublishExpiredEvents" value="true"/>
+            <ConfigItem name="RoundRobinDelivery" value="false"/>
+            <ConfigItem name="SendEndOfChannelAlways" value="false"/>
+            <ConfigItem name="SendPubEventsImmediately" value="true"/>
+            <ConfigItem name="SyncQueueDelay" value="1000"/>
+            <ConfigItem name="SyncQueuePublisher" value="false"/>
+        </ConfigGroup>
+        <ConfigGroup name="Global Values">
+            <ConfigItem name="AllowRealmAdminFullAccess" value="true"/>
+            <ConfigItem name="CacheJoinInfoKeys" value="true"/>
+            <ConfigItem name="DisableExplicitGC" value="true"/>
+            <ConfigItem name="EnableCaching" value="false"/>
+            <ConfigItem name="EnableDNSLookups" value="true"/>
+            <ConfigItem name="EnableWeakReferenceCleanup" value="true"/>
+            <ConfigItem name="ExtendedMessageSelector" value="true"/>
+            <ConfigItem name="HTTPCookieSize" value="14"/>
+            <ConfigItem name="NHPScanTime" value="5000"/>
+            <ConfigItem name="NHPTimeout" value="120000"/>
+            <ConfigItem name="NanoDelayBase" value="1000000"/>
+            <ConfigItem name="OverrideEveryoneUser" value="false"/>
+            <ConfigItem name="PauseServerPublishing" value="false"/>
+            <ConfigItem name="SendRealmSummaryStats" value="false"/>
+            <ConfigItem name="ServerStateFlush" value="500"/>
+            <ConfigItem name="ServerTime" value="true"/>
+            <ConfigItem name="StampDictionary" value="true"/>
+            <ConfigItem name="StampHost" value="true"/>
+            <ConfigItem name="StampTime" value="true"/>
+            <ConfigItem name="StampTimeUseHPT" value="false"/>
+            <ConfigItem name="StampTimeUseHPTScale" value="0"/>
+            <ConfigItem name="StampUser" value="true"/>
+            <ConfigItem name="StatusBroadcast" value="5000"/>
+            <ConfigItem name="StatusUpdateTime" value="9223372036854775807"/>
+        </ConfigGroup>
+        <ConfigGroup name="Inter-Realm Comms Config">
+            <ConfigItem name="EstablishmentTime" value="30000"/>
+            <ConfigItem name="KeepAliveInterval" value="10000"/>
+            <ConfigItem name="KeepAliveResetTime" value="35000"/>
+            <ConfigItem name="MaximumReconnectTime" value="20000"/>
+            <ConfigItem name="MinimumReconnectTime" value="1000"/>
+            <ConfigItem name="Timeout" value="120000"/>
+            <ConfigItem name="WriteDelayOnFail" value="false"/>
+            <ConfigItem name="WriteDelayTimeout" value="30000"/>
+            <ConfigItem name="ZoneDefaultCanRecv" value="true"/>
+            <ConfigItem name="ZoneDefaultCanSend" value="true"/>
+        </ConfigGroup>
+        <ConfigGroup name="JVM Management">
+            <ConfigItem name="AutoThreadDumpOnExit" value="true"/>
+            <ConfigItem name="EmergencyThreshold" value="94"/>
+            <ConfigItem name="EnableJMX" value="false"/>
+            <ConfigItem name="ExitOnDiskIOError" value="true"/>
+            <ConfigItem name="ExitOnInterfaceFailure" value="false"/>
+            <ConfigItem name="ExitOnMemoryError" value="true"/>
+            <ConfigItem name="IORetryCount" value="10"/>
+            <ConfigItem name="IOSleepTime" value="500"/>
+            <ConfigItem name="JMXRMIServerURLString" value="service:jmx:rmi:///jndi/rmi://localhost:9999/server"/>
+            <ConfigItem name="MemoryMonitoring" value="2000"/>
+            <ConfigItem name="ThrottleAllPublishersAtThreshold" value="true"/>
+            <ConfigItem name="WarningThreshold" value="85"/>
+        </ConfigGroup>
+        <ConfigGroup name="Join Config">
+            <ConfigItem name="ActiveThreadPoolSize" value="2"/>
+            <ConfigItem name="IdleThreadPoolSize" value="1"/>
+            <ConfigItem name="MaxEventsPerSchedule" value="50"/>
+            <ConfigItem name="MaxQueueSizeToUse" value="100"/>
+            <ConfigItem name="RemoteJoinAckBatchSize" value="10"/>
+            <ConfigItem name="RemoteJoinAckInterval" value="100"/>
+            <ConfigItem name="UseQueuedLocalJoinHandler" value="false"/>
+        </ConfigGroup>
+        <ConfigGroup name="Logging Config">
+            <ConfigItem name="DefaultLogSize" value="100000000"/>
+            <ConfigItem name="DisplayCurrentThread" value="true"/>
+            <ConfigItem name="DisplayPackageName" value="true"/>
+            <ConfigItem name="EmbedTag" value="false"/>
+            <ConfigItem name="EnableLog4J" value="false"/>
+            <ConfigItem name="LogManager" value="1"/>
+            <ConfigItem name="RolledLogFileDepth" value="10"/>
+            <ConfigItem name="customDebugTag" value="Debug"/>
+            <ConfigItem name="customErrorTag" value="Error"/>
+            <ConfigItem name="customFatalTag" value="Fatal"/>
+            <ConfigItem name="customInfoTag" value="Info"/>
+            <ConfigItem name="customLogTag" value="Log"/>
+            <ConfigItem name="customTraceTag" value="Trace"/>
+            <ConfigItem name="customWarnTag" value="Warn"/>
+            <ConfigItem name="fLoggerLevel" value="4"/>
+        </ConfigGroup>
+        <ConfigGroup name="Metric Config">
+            <ConfigItem name="EnableEventMemoryMonitoring" value="true"/>
+            <ConfigItem name="EnableMetrics" value="true"/>
+        </ConfigGroup>
+        <ConfigGroup name="Plugin Config">
+            <ConfigItem name="EnableAccessLog" value="true"/>
+            <ConfigItem name="EnableErrorLog" value="true"/>
+            <ConfigItem name="EnablePluginLog" value="true"/>
+            <ConfigItem name="MaxNumberOfPluginThreads" value="200"/>
+            <ConfigItem name="PluginTimeout" value="30000"/>
+        </ConfigGroup>
+        <ConfigGroup name="Protobuf Config">
+            <ConfigItem name="CacheEventFilter" value="true"/>
+            <ConfigItem name="FilterProtobufEvents" value="true"/>
+            <ConfigItem name="MaximumProtobufBuilders" value="4"/>
+            <ConfigItem name="MinimumProtobufBuilders" value="2"/>
+            <ConfigItem name="ProtobufDescriptorsInputDir" value="C:\SoftwareAG\nirvana\server\nirvana/plugins/ProtobufDescriptors"/>
+            <ConfigItem name="ProtobufDescriptorsOutputDir" value="C:\SoftwareAG\nirvana\server\nirvana/plugins/htdocs/"/>
+            <ConfigItem name="UpdateDescriptorsInterval" value="60000"/>
+            <ConfigItem name="useChannelLevelProtobufCache" value="true"/>
+        </ConfigGroup>
+        <ConfigGroup name="Protocol AMQP Config">
+            <ConfigItem name="AllowUserTransformation" value="false"/>
+            <ConfigItem name="AnonymousUser" value="anonymous_amqp"/>
+            <ConfigItem name="BufferSize" value="10240"/>
+            <ConfigItem name="DefaultNodeMode" value="0"/>
+            <ConfigItem name="Enable" value="true"/>
+            <ConfigItem name="EnableWriteThread" value="false"/>
+            <ConfigItem name="EngineLoopCount" value="50"/>
+            <ConfigItem name="MaxFrameSize" value="10000000"/>
+            <ConfigItem name="MaxThreadPoolSize" value="10"/>
+            <ConfigItem name="MinThreadPoolSize" value="1"/>
+            <ConfigItem name="QueuePrefix" value="queue://"/>
+            <ConfigItem name="SASL_Anonymous" value="true"/>
+            <ConfigItem name="SASL_CRAM-MD5" value="false"/>
+            <ConfigItem name="SASL_DIGEST-MD5" value="false"/>
+            <ConfigItem name="SASL_Plain" value="false"/>
+            <ConfigItem name="SubscriberCredit" value="1000"/>
+            <ConfigItem name="Timeout" value="60000"/>
+            <ConfigItem name="TopicPrefix" value="topic://"/>
+            <ConfigItem name="TransformToUse" value="2"/>
+        </ConfigGroup>
+        <ConfigGroup name="Protocol MQTT Config">
+            <ConfigItem name="DisconnectClientsOnPublishFailure" value="true"/>
+            <ConfigItem name="DisconnectOnSecurityException" value="true"/>
+            <ConfigItem name="Enable" value="true"/>
+            <ConfigItem name="EnableAutoCreateTopics" value="true"/>
+            <ConfigItem name="EnforceAlphaNumericClientID" value="false"/>
+            <ConfigItem name="IgnoreClientIDLength" value="true"/>
+            <ConfigItem name="MaxOutstanding" value="64000"/>
+            <ConfigItem name="QoS0AsTransient" value="false"/>
+            <ConfigItem name="SessionStateTTL" value="259200000"/>
+            <ConfigItem name="Strict" value="true"/>
+            <ConfigItem name="SupportZeroLength" value="true"/>
+            <ConfigItem name="Timeout" value="5000"/>
+        </ConfigGroup>
+        <ConfigGroup name="Proxy Forward Config">
+            <ConfigItem name="BufferSize" value="10240"/>
+            <ConfigItem name="FlushTimeout" value="120000"/>
+        </ConfigGroup>
+        <ConfigGroup name="RecoveryDaemon">
+            <ConfigItem name="EventsPerBlock" value="500"/>
+            <ConfigItem name="ThreadPool" value="4"/>
+        </ConfigGroup>
+        <ConfigGroup name="Server Protection">
+            <ConfigItem name="EnableFlowControl" value="true"/>
+            <ConfigItem name="FlowControlWaitTimeOne" value="16000"/>
+            <ConfigItem name="FlowControlWaitTimeThree" value="10000"/>
+            <ConfigItem name="FlowControlWaitTimeTwo" value="13332"/>
+        </ConfigGroup>
+        <ConfigGroup name="Thread Pool Config">
+            <ConfigItem name="CommonPoolThreadSize" value="5"/>
+            <ConfigItem name="ConnectionThreadPoolMaxSize" value="10"/>
+            <ConfigItem name="ConnectionThreadPoolMinSize" value="4"/>
+            <ConfigItem name="ConnectionThreadWaitTime" value="120000"/>
+            <ConfigItem name="EnableConnectionThreadPooling" value="true"/>
+            <ConfigItem name="MaxUnauthorisedCount" value="1000"/>
+            <ConfigItem name="ReadThreadPoolMaxSize" value="100"/>
+            <ConfigItem name="ReadThreadPoolMinSize" value="4"/>
+            <ConfigItem name="SchedulerPoolSize" value="2"/>
+            <ConfigItem name="ThreadIdleQueueSize" value="10"/>
+            <ConfigItem name="WriteThreadPoolMaxSize" value="1000"/>
+            <ConfigItem name="WriteThreadPoolMinSize" value="5"/>
+        </ConfigGroup>
+        <ConfigGroup name="TransactionManager">
+            <ConfigItem name="MaxEventsPerTransaction" value="0"/>
+            <ConfigItem name="MaxTransactionTime" value="300000"/>
+            <ConfigItem name="TTLThreshold" value="1000"/>
+        </ConfigGroup>
+    </RealmConfiguration>
+    <RealmPermissionSet>
+        <RealmACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" connectToRealm="true" changeRealmConfig="true" addremoveChannels="true" addremoveJoins="true" addremoveRealms="true" overrideConnectionCount="true" useAdminAPI="true" manageDatagroups="true" publishDatagroups="true" ownDatagroups="true" host="*" name="*"/>
+        <RealmACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" connectToRealm="true" changeRealmConfig="true" addremoveChannels="true" addremoveJoins="true" addremoveRealms="true" overrideConnectionCount="true" useAdminAPI="true" manageDatagroups="true" publishDatagroups="true" ownDatagroups="true" host="0:0:0:0:0:0:0:1" name="mohamedraafat"/>
+        <RealmACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" connectToRealm="true" changeRealmConfig="true" addremoveChannels="true" addremoveJoins="true" addremoveRealms="true" overrideConnectionCount="true" useAdminAPI="true" manageDatagroups="true" publishDatagroups="true" ownDatagroups="true" host="127.0.0.1" name="mohamedraafat"/>
+        <RealmACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" connectToRealm="true" changeRealmConfig="true" addremoveChannels="true" addremoveJoins="true" addremoveRealms="true" overrideConnectionCount="true" useAdminAPI="true" manageDatagroups="true" publishDatagroups="true" ownDatagroups="true" host="0:0:0:0:0:0:0:1" name="mostafagohar"/>
+        <RealmACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" connectToRealm="true" changeRealmConfig="true" addremoveChannels="true" addremoveJoins="true" addremoveRealms="true" overrideConnectionCount="true" useAdminAPI="true" manageDatagroups="true" publishDatagroups="true" ownDatagroups="true" host="127.0.0.1" name="mostafagohar"/>
+        <RealmGroupACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" connectToRealm="true" changeRealmConfig="true" addremoveChannels="true" addremoveJoins="true" addremoveRealms="true" overrideConnectionCount="true" useAdminAPI="true" manageDatagroups="true" publishDatagroups="true" ownDatagroups="true" groupname="Everyone"/>
+    </RealmPermissionSet>
+    <ChannelSet>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/Event/WebM/Process/V1_0/ProcessStageDefinitionsChange" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/Event/WebM/Process/V2_0/ProcessInstanceChange" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="Event/WebM/Process/V2_0/ProcessInstanceChange" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/Event/WebM/Process/V2_0/ProcessInstanceError" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="Event/WebM/Process/V2_0/ProcessInstanceError" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/Event/WebM/Process/V2_0/ProcessStepInstanceChange" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="Event/WebM/Process/V2_0/ProcessStepInstanceChange" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/Event/WebM/Process/V2_0/ProcessStepInstanceError" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="Event/WebM/Process/V2_0/ProcessStepInstanceError" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="MyTopic" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="PEBroadcastTopic" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="PERestartTopic" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="ISa265bdd6_41b4_4725_b2a4_087e5c4e10e1##PERestartSubscriber" EID="88" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="false" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="TestTopic1_T" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="DEFAULT_IS_JMS_CLIENT##twoTopicTrigger" EID="111" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="false" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="TestTopic2_T" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="DEFAULT_IS_JMS_CLIENT##twoTopicTrigger" EID="58" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="false" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="TestTopic3_T" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="PERSISTENT_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/naming/defaultContext" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <ChannelKeySet>
+                <ChannelKeyEntry keyName="alias" keyDepth="1"/>
+            </ChannelKeySet>
+            <EventsSet/>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/cache_change" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/cache_request" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/conf_change" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/conf_request" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/dca_event_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/deployment_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/dimension_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/job_queue_change" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/meta_names_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/proc_err_meta_del" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/process_event_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/process_model" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/topic/rule_change" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/10_140_0_6_5555_1572779555_J_jRQtEolDEurgAVIwwwADXaZQs__RequestReplyClient" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="sohailahnabil"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/10_140_0_6_5555_1573549660_J_jRQtEolDEurgAVIwwwADXaZQs__RequestReplyClient" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/IntegrationCourse_Name/JDBC/customerAdapterNotificationPublishDocument" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/IntegrationCourse_Name/JDBC/customerInsertNotificationPublishDocument" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/MohamedRaafat_Pkg/JDBC/insertCustomer_adapterNotificationPublishDocument" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mohamedraafat"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/agileapps/CaseToProcess" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##wm__agileapps__AgileProcessTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/agileapps/ProcessToCase" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/debug/ProcessComplete" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/CallActivityReturn" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/CallActivityStart" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildProcessTestProject__ChildProcess__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__LoanChildTest__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildTestProject__ChildProcessTest__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__testingProcess__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##BillingProject__ChildBilling__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/ProcessTransition" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/ProcessTransitionVol" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__LoanChildTest__LoanChildTest_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__testingProcess__testingProcess_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##GoharProject__LoanApplicationProcess_1__LoanApplicationProcess_1_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildTestProject__ChildProcessTest__ChildProcessTest_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##BillingProject__ChildBilling__ChildBilling_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildProcessTestProject__ChildProcess__ChildProcess_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/Signal" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/SubprocessDone" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/SubprocessReturn" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/SubprocessStart" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/dispatch/nullDoc" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/status/ChangeCommand" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+            <DurableSet>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##wm__prt__status__controlTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+            </DurableSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/webservices/WebserviceReply" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+        <ChannelEntry>
+            <ChannelAttributesEntry name="/wm/is/wm/prt/webservices/WebserviceRequest" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <ChannelPermissionSet>
+                <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
+                <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
+                <ChannelGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" getLastEID="true" purgeEvents="false" subscribe="true" publish="false" useNamedSubcription="true" groupname="Everyone"/>
+            </ChannelPermissionSet>
+        </ChannelEntry>
+    </ChannelSet>
+    <QueueSet>
+        <QueueEntry>
+            <ChannelAttributesEntry name="BillingProject_BillingProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="BillingProject_BillingProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="ChildProcessTestProject_ChildProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="ChildProcessTestProject_ChildProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="ChildProcessTestProject_ParentProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="ChildProcessTestProject_ParentProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="DevOpsDemoProcess_DevProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="DevOpsDemoProcess_DevProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="Gohar_Raafat_Q" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanApplicationProject_LoanApplicationProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanApplicationProject_LoanApplicationProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanApplicationProject_testingProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanApplicationProject_testingProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUEEX_531483" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="MyQueue" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="Notification_Gohar_Q" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="Notification_Mohamed_Q" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="PaymenttProject_BillingProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="PaymenttProject_BillingProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="Q_Test_Trigger" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="pleaseProject_pleaseProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="pleaseProject_pleaseProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/alg_state_persist" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/cache_reply" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/conf_reply" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/dca_dimension" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/dca_event" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/deployment" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/dimension_request" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/discovered_asset_change" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/discovered_asset_change_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/discovery_action" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/discovery_action_response" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/kpi_aggregate_diagnosis" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/kpi_aggregate_stats" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/kpi_event" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/mapped_event" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/meta_names_request" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/monitor_change_internal" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/process_instance" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/process_instance_0" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/process_model_request" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_dim_disabled" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_dim_event_eval" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_event" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_event_eval" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_event_write" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_kpi" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_kpi_eval" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_reading_eval" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_threshold" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/rule_threshold_eval" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/stats_persist" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/queue/subscription_registration" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/temp/queue19185700000003" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="/temp/queue19192e00000004" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+    </QueueSet>
+    <DataGroupSet/>
+    <RealmInterfaces>
+        <RealmNHPInterface>
+            <RealmInterface name="nhp0" port="9000" adapter="0.0.0.0" autostart="true" advertise="true" authtime="10000" backlog="100" acceptThreads="2" sendbuffersize="1310720" receivebuffersize="1310720" allowforinterrealm="true" allowclientconnections="true" EnableNIO="true"/>
+            <RealmInterfacePlugin mountPoint="/" name="File Plugin">
+                <NirvanaFilePlugin>
+                    <PluginConfigEntry name="AddUserAsCookie" value="" description="Add the username to the sessions cookies"/>
+                    <PluginConfigEntry name="AuthParameters" value="" description="List of key=value string which is passed to the authenticators init function"/>
+                    <PluginConfigEntry name="Authenticator" value="" description="Name of authenticator to use, leave to use default, else classname to use"/>
+                    <PluginConfigEntry name="BasePath" value="C:\SoftwareAG10\UniversalMessaging/doc" description="Path used to locate the files"/>
+                    <PluginConfigEntry name="BufferSize" value="" description="Size of the internal buffer to use to send the data"/>
+                    <PluginConfigEntry name="Cache-Control" value="" description="Specifies the cache control for the plugin"/>
+                    <PluginConfigEntry name="CacheObjectSize" value="" description="Size in bytes that can be stored in the cache"/>
+                    <PluginConfigEntry name="CachedObjects" value="" description="Number of objects to store in the cache"/>
+                    <PluginConfigEntry name="DefaultName" value="index.html" description="If no file name is specified which file should be returned"/>
+                    <PluginConfigEntry name="EnableURLRewrite" value="" description="If the plugin will scan the source and rewrite the urls"/>
+                    <PluginConfigEntry name="FileNotFoundPage" value="" description="name of the file to send when file can not be located"/>
+                    <PluginConfigEntry name="GroupNames" value="" description="A comma seperated list of groups which the user must be a member of at least one to be granted access"/>
+                    <PluginConfigEntry name="MimeType" value="" description="Name of the file to load the mime type information from"/>
+                    <PluginConfigEntry name="ReloadUserFileDynamically" value="" description="Choose true to have the user file get reloaded on each auth request"/>
+                    <PluginConfigEntry name="RoleNames" value="" description="A comma seperated list of roles which the user must have at least one of to be granted access"/>
+                    <PluginConfigEntry name="Security Realm" value="" description="Name of the authentication realm"/>
+                    <PluginConfigEntry name="SeparateAccessandErrorLogs" value="" description="Choose true to have separate log files"/>
+                </NirvanaFilePlugin>
+            </RealmInterfacePlugin>
+            <RealmInterfacePlugin mountPoint="/lib/js" name="File Plugin">
+                <NirvanaFilePlugin>
+                    <PluginConfigEntry name="AddUserAsCookie" value="" description="Add the username to the sessions cookies"/>
+                    <PluginConfigEntry name="AuthParameters" value="" description="List of key=value string which is passed to the authenticators init function"/>
+                    <PluginConfigEntry name="Authenticator" value="" description="Name of authenticator to use, leave to use default, else classname to use"/>
+                    <PluginConfigEntry name="BasePath" value="C:\SoftwareAG10\UniversalMessaging/javascript/lib" description="Path used to locate the files"/>
+                    <PluginConfigEntry name="BufferSize" value="" description="Size of the internal buffer to use to send the data"/>
+                    <PluginConfigEntry name="Cache-Control" value="" description="Specifies the cache control for the plugin"/>
+                    <PluginConfigEntry name="CacheObjectSize" value="" description="Size in bytes that can be stored in the cache"/>
+                    <PluginConfigEntry name="CachedObjects" value="" description="Number of objects to store in the cache"/>
+                    <PluginConfigEntry name="DefaultName" value="index.html" description="If no file name is specified which file should be returned"/>
+                    <PluginConfigEntry name="EnableURLRewrite" value="" description="If the plugin will scan the source and rewrite the urls"/>
+                    <PluginConfigEntry name="FileNotFoundPage" value="" description="name of the file to send when file can not be located"/>
+                    <PluginConfigEntry name="GroupNames" value="" description="A comma seperated list of groups which the user must be a member of at least one to be granted access"/>
+                    <PluginConfigEntry name="MimeType" value="" description="Name of the file to load the mime type information from"/>
+                    <PluginConfigEntry name="ReloadUserFileDynamically" value="" description="Choose true to have the user file get reloaded on each auth request"/>
+                    <PluginConfigEntry name="RoleNames" value="" description="A comma seperated list of roles which the user must have at least one of to be granted access"/>
+                    <PluginConfigEntry name="Security Realm" value="" description="Name of the authentication realm"/>
+                    <PluginConfigEntry name="SeparateAccessandErrorLogs" value="" description="Choose true to have separate log files"/>
+                </NirvanaFilePlugin>
+            </RealmInterfacePlugin>
+            <JavascriptConfigEntry CORSAllowedOrigins="*" EnableJavaScript="true" EnableWebSockets="true" CORSAllowCredentials="true" EnableGZipLP="true" MinimumBytesBeforeGZIP="1000" AjaxLPIdleDelay="60000" AjaxLPActiveDelay="100"/>
+        </RealmNHPInterface>
+    </RealmInterfaces>
+    <RealmSecurityGroupSet/>
+</NirvanaRealm>
