@@ -1,0 +1,23 @@
+<CONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://www.webmethods.com/schema/xmlImport.xsd"
+>
+	<CONTEXT alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.task.app">
+		<folder name="Loan Expert Task Details" description="Loan Expert Task Details" alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.task.app.details.page" isTaskFolder="false">
+            <page>
+            	<row>
+            		<column>
+            			<loantasksproject___loanexperttaskoverview name="Task View" alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.task.app.details.portlet">
+                            <layout name="titlebar" value="false"/>
+                            <layout name="border" value="false"/>            			
+            			</loantasksproject___loanexperttaskoverview>             			
+                    </column>
+                </row>
+                <hobos/>
+            </page>
+        </folder>
+        <loantasksproject___loanexperttaskview name="New Task View" alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.task.app.details.view.portlet">
+                            <layout name="titlebar" value="false"/>
+                            <layout name="border" value="false"/>            			
+        </loantasksproject___loanexperttaskview> 
+    </CONTEXT>
+</CONFIG>

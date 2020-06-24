@@ -1,0 +1,34 @@
+<CONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://www.webmethods.com/schema/xmlImport.xsd"
+    depCheck="false"
+>
+	<Mode type="sync">
+	    <!-- Setup distribution rules -->
+	    <CONTEXT alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.routing.rules.storage">
+	    <wm_xt_portalrules name="Gohar Assignment" description="Assign Gohar Role to Loan Applications" ruleEditingContextURI="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.distrib.rule.editing.context" ruleType="routing">
+	<rule name="Gohar Assignment" description="Assign Gohar Role to Loan Applications" ruleEditingContextURI="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.distrib.rule.editing.context" ruleType="routing">
+		<condition><boolean constant="true" displayName="boolean" description="a boolean value (true or false)" variableInfo.enabled="false"></boolean></condition>
+		<result><string constant="Gohar Role" displayName="string" description="a string value" variableInfo.enabled="false"></string></result>
+		<attributes><attribute name="taskDefinitionURI">8548C11C-203F-F6C3-6DB7-67D1D335A4FC</attribute><attribute name="origConditionText">true</attribute><attribute name="assigneeList">assigneetype.physicalrole~&quot;Gohar Role&quot;~Role : Gohar Role~assigneeValue=&quot;Gohar Role&quot;\,assigneeLabel=Gohar Role</attribute><attribute name="ruleSet"></attribute><attribute name="origResultText">&quot;Gohar Role&quot;</attribute><attribute name="conditionJoin">0</attribute><attribute name="doNotFire">false</attribute><attribute name="ruleEditingContextID">task.rule.distribution.context</attribute><attribute name="fireOnce">true</attribute><attribute name="ruleType">routing</attribute><attribute name="distManType">none</attribute><attribute name="conditionType">true</attribute><attribute name="conditions"></attribute></attributes>
+	</rule>
+</wm_xt_portalrules></CONTEXT>
+	
+	    <!-- Setup distribution filters -->
+	    <CONTEXT alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.filter.rules.storage">
+	    </CONTEXT>
+	
+	    <!-- Setup trigger rules -->
+	    <CONTEXT alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.change.rules.storage">
+	    <wm_xt_portalrules name="Set Custom ID" description="set task custom id to equal account number" ruleEditingContextURI="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.trigger.rule.editing.context" info="1" ruleType="change">
+	<rule name="Set Custom ID" description="set task custom id to equal account number" ruleEditingContextURI="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.trigger.rule.editing.context" ruleType="change">
+		<condition><and displayName="and" description="AND logical operator"><and displayName="and" description="AND logical operator"><equals displayName="equals" description="equals comparison"><bindingExpression constant="#{newTask.taskInfo.status}" displayName="bindingExpression" description="an external binding expression" variableInfo.enabled="false"></bindingExpression><string constant="active" displayName="string" description="a string value" variableInfo.enabled="false"></string></equals><equals displayName="equals" description="equals comparison"><bindingExpression constant="#{oldTask.taskInfo.status}" displayName="bindingExpression" description="an external binding expression" variableInfo.enabled="false"></bindingExpression><string constant="new" displayName="string" description="a string value" variableInfo.enabled="false"></string></equals></and><boolean constant="true" displayName="boolean" description="a boolean value (true or false)" variableInfo.enabled="false"></boolean></and></condition>
+		<result><semicolon displayName="semicolon" description="Multiple statement operator"><assign displayName="assign" description="Assignment"><bindingExpression constant="#{currentTask.taskInfo.customTaskID}" displayName="bindingExpression" description="an external binding expression" variableInfo.enabled="false"></bindingExpression><bindingExpression constant="#{currentTask.taskData.loanApplicationCanonical.loanApplicationRequest.accountNumber}" displayName="bindingExpression" description="an external binding expression" variableInfo.enabled="false"></bindingExpression></assign><bindingExpression constant="#{currentTask.applyChangesNoAccept}" displayName="bindingExpression" description="an external binding expression" variableInfo.enabled="false"></bindingExpression></semicolon></result>
+		<attributes><attribute name="actionType">true</attribute><attribute name="taskDefinitionURI">8548C11C-203F-F6C3-6DB7-67D1D335A4FC</attribute><attribute name="origConditionText">(#{newTask.taskInfo.status} == &quot;active&quot; &amp;&amp; #{oldTask.taskInfo.status} == &quot;new&quot;) &amp;&amp; (true)</attribute><attribute name="ruleEditingContextID">task.rule.trigger.context</attribute><attribute name="ruleType">change</attribute><attribute name="ruleSet"></attribute><attribute name="origResultText">#{currentTask.taskInfo.customTaskID} = #{currentTask.taskData.loanApplicationCanonical.loanApplicationRequest.accountNumber};#{currentTask.applyChangesNoAccept}</attribute><attribute name="eventType">task.queued</attribute><attribute name="eventTypeConditionsJoin">0</attribute><attribute name="actions">actiontype.updatetaskinfo.customID~#{currentTask.taskInfo.customTaskID} = #{currentTask.taskData.loanApplicationCanonical.loanApplicationRequest.accountNumber}~Set Task CustomID as AccountNumber~label=AccountNumber\,value=#{currentTask.taskData.loanApplicationCanonical.loanApplicationRequest.accountNumber}\,original.editor.type=</attribute><attribute name="eventTypeConditions"></attribute></attributes>
+	</rule>
+</wm_xt_portalrules></CONTEXT>
+	
+	    <!-- Setup schedule rules -->
+	    <CONTEXT alias="8548C11C-203F-F6C3-6DB7-67D1D335A4FC.schedule.rules.storage">
+	    </CONTEXT>
+	</Mode>
+</CONFIG>

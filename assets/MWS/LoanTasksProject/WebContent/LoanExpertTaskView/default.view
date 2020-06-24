@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<view>
+  <property name='pageManagedBean' value='LoanExpertTaskViewDefaultviewView' />
+  <property name='preferencesBean' value='LoanExpertTaskView' />
+  <design-time-attribute name='taskTypeID' value='8548C11C-203F-F6C3-6DB7-67D1D335A4FC' />
+  <design-time-attribute name='taskPortletType' value='taskView' />
+  <design-time-attribute name='portlet' value='LoanExpertTaskView' />
+  <control component-type='com.webmethods.caf.faces.command.CommandForm' renderer-type='com.webmethods.caf.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='taskViewForm' />
+    <control component-type='com.webmethods.caf.faces.output.ErrorMessages' renderer-type='com.webmethods.caf.faces.output.ErrorMessages'>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='globalOnly' value='true' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertySubGroup'>
+      <property name='id' value='taskDataSubGroup' />
+      <property name='label' value='LoanApplicationCanonical' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertyGroup'>
+        <property name='id' value='propertyGroup' />
+        <property name='label' value='LoanApplicationRequest' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine' />
+          <property name='label' value='AccountNumber' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <property name='id' value='htmlInputText' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskData.loanApplicationCanonical.loanApplicationRequest.accountNumber}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine1' />
+          <property name='label' value='CustomerName' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <property name='id' value='htmlInputText1' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskData.loanApplicationCanonical.loanApplicationRequest.customerName}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine4' />
+          <property name='label' value='LoanAmount' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.CurrencyInteger'>
+            </converter>
+            <property name='id' value='htmlInputText4' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskData.loanApplicationCanonical.loanApplicationRequest.loanAmount}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine3' />
+          <property name='label' value='LoanType' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <property name='id' value='htmlInputText3' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskData.loanApplicationCanonical.loanApplicationRequest.loanType}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine2' />
+          <property name='label' value='CustomerSalary' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.CurrencyInteger'>
+            </converter>
+            <property name='id' value='htmlInputText2' />
+            <property name='raw' value='true' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskData.loanApplicationCanonical.loanApplicationRequest.customerSalary}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='id' value='propertyLine21' />
+          <property name='label' value='Expert Comment' />
+          <control component-type='javax.faces.HtmlInputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <property name='id' value='htmlInputText21' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskData.loanApplicationCanonical.expertComment}' />
+            <property name='width' value='input20' />
+          </control>
+        </control>
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.toggle.OneWayToggleButton' renderer-type='com.webmethods.caf.faces.toggle.OneWayToggleButton'>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='for' value=':taskViewForm:optionalPanel' />
+      <property name='rendered' value='false' />
+      <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.toggle.task.info&quot;]}' />
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.HideablePanel' renderer-type='com.webmethods.caf.faces.panel.HideablePanel'>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='id' value='optionalPanel' />
+      <property name='rendered' value='false' />
+      <control component-type='com.webmethods.caf.faces.panel.PropertyGroup' renderer-type='com.webmethods.caf.faces.panel.PropertySubGroup'>
+        <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.task.info&quot;]}' />
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.name&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <property name='id' value='nameText' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskInfo.name}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.description&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <property name='id' value='descriptionText' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskInfo.description}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.created.on&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.FormattedDateTime'>
+              <property name='displayTime' value='true' />
+              <property name='pattern' value='#{portletUserAttributes[&quot;user.default.date.format&quot;]}' />
+              <property name='patternTime' value='#{portletUserAttributes[&quot;user.default.time.format&quot;]}' />
+              <property name='timePrecision' value='0' />
+              <property name='timeZone' value='#{portletUserAttributes[&quot;user.default.time_zone&quot;]}' />
+            </converter>
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskInfo.createdDate}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputFormat' renderer-type='com.webmethods.caf.faces.Format'>
+            <property name='id' value='htmlOutputFormat1' />
+            <property name='style' value='padding-left: 0.5em;&#13;&#10;' />
+            <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.by&quot;]}' />
+            <control component-type='javax.faces.Parameter' renderer-type=''>
+              <property name='value' value='#{LoanExpertTaskViewDefaultviewView.taskDisplayProvider.createdByDisplayName}' />
+            </control>
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.last.modified&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.FormattedDateTime'>
+              <property name='displayTime' value='true' />
+              <property name='pattern' value='#{portletUserAttributes[&quot;user.default.date.format&quot;]}' />
+              <property name='patternTime' value='#{portletUserAttributes[&quot;user.default.time.format&quot;]}' />
+              <property name='timePrecision' value='0' />
+              <property name='timeZone' value='#{portletUserAttributes[&quot;user.default.time_zone&quot;]}' />
+            </converter>
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskInfo.lastModifiedDate}' />
+          </control>
+          <control component-type='javax.faces.HtmlOutputFormat' renderer-type='com.webmethods.caf.faces.Format'>
+            <property name='id' value='htmlOutputFormat2' />
+            <property name='style' value='padding-left:0.5em' />
+            <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.by&quot;]}' />
+            <control component-type='javax.faces.Parameter' renderer-type=''>
+              <property name='value' value='#{LoanExpertTaskViewDefaultviewView.taskDisplayProvider.lastModifiedDisplayName}' />
+            </control>
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.expires&quot;]}' />
+          <control component-type='javax.faces.HtmlOutputText' renderer-type='com.webmethods.caf.faces.Text'>
+            <converter converter-id='com.webmethods.caf.faces.converter.FormattedDateTime'>
+              <property name='displayTime' value='true' />
+              <property name='pattern' value='#{portletUserAttributes[&quot;user.default.date.format&quot;]}' />
+              <property name='patternTime' value='#{portletUserAttributes[&quot;user.default.time.format&quot;]}' />
+              <property name='timePrecision' value='0' />
+              <property name='timeZone' value='#{portletUserAttributes[&quot;user.default.time_zone&quot;]}' />
+            </converter>
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskInfo.expireDate}' />
+          </control>
+        </control>
+        <control component-type='com.webmethods.caf.faces.panel.PropertyLine' renderer-type='com.webmethods.caf.faces.panel.PropertyLine'>
+          <property name='label' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.status&quot;]}' />
+          <control component-type='com.webmethods.caf.faces.select.SelectOneOutput' renderer-type='com.webmethods.caf.faces.select.SelectOneOutput'>
+            <property name='id' value='statusText' />
+            <property name='value' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.taskInfo.status}' />
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='activeStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.active&quot;]}' />
+              <property name='itemValue' value='active' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='cancelledStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.canceled&quot;]}' />
+              <property name='itemValue' value='cancelled' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='completedStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.completed&quot;]}' />
+              <property name='itemValue' value='completed' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='errorStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.error&quot;]}' />
+              <property name='itemValue' value='error' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='expiredStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.expired&quot;]}' />
+              <property name='itemValue' value='expired' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='suspendedStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.suspended&quot;]}' />
+              <property name='itemValue' value='suspended' />
+            </control>
+            <control component-type='javax.faces.SelectItem' renderer-type=''>
+              <property name='id' value='scheduledStatusItem' />
+              <property name='itemLabel' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.scheduled&quot;]}' />
+              <property name='itemValue' value='scheduled' />
+            </control>
+          </control>
+        </control>
+      </control>
+    </control>
+    <control component-type='com.webmethods.caf.faces.panel.PropertySubmit' renderer-type='com.webmethods.caf.faces.panel.PropertySubmit'>
+      <design-time-attribute name='rolledUp' value='false' />
+      <control component-type='javax.faces.HtmlCommandButton' renderer-type='com.webmethods.caf.faces.Button'>
+        <property name='action' value='#{LoanExpertTaskViewDefaultviewView.completeTask}' signature='java.lang.String action()' />
+        <property name='disabled' value='#{not LoanExpertTaskViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+        <property name='rendered' value='false' />
+        <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.complete&quot;]}' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.toggle.OneWayToggleButton' renderer-type='com.webmethods.caf.faces.toggle.OneWayToggleButton'>
+        <property name='disabled' value='#{not LoanExpertTaskViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+        <property name='for' value=':assignToForm:assignedPrincipalPicker' />
+        <property name='id' value='toggleAssignedPrincipalPicker' />
+        <property name='rendered' value='false' />
+        <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.assign.users&quot;]}' />
+        <property name='way' value='show' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{LoanExpertTaskViewDefaultviewView.reject}' signature='java.lang.String action()' />
+        <property name='disabled' value='#{not LoanExpertTaskViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+        <property name='id' value='button1' />
+        <property name='rendered' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.currentUserAccepted}' />
+        <property name='value' value='Reject' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{LoanExpertTaskViewDefaultviewView.approve}' signature='java.lang.String action()' />
+        <property name='id' value='button' />
+        <property name='rendered' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.currentUserAccepted}' />
+        <property name='value' value='Approve' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.acceptTask}' signature='java.lang.String action()' />
+        <property name='disabled' value='#{not LoanExpertTaskViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+        <property name='id' value='button2' />
+        <property name='immediate' value='true' />
+        <property name='rendered' value='#{!LoanExpertTaskViewDefaultviewView.loanExpertTask.currentUserAccepted}' />
+        <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.accept&quot;]}' />
+      </control>
+      <control component-type='com.webmethods.caf.faces.command.async.Button' renderer-type='com.webmethods.caf.faces.command.async.Button'>
+        <property name='action' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.unacceptTask}' signature='java.lang.String action()' />
+        <property name='disabled' value='#{not LoanExpertTaskViewDefaultviewView.taskDisplayProvider.activeStatus}' />
+        <property name='id' value='button3' />
+        <property name='immediate' value='true' />
+        <property name='rendered' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.currentUserAccepted}' />
+        <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.release&quot;]}' />
+      </control>
+    </control>
+  </control>
+  <control component-type='com.webmethods.caf.faces.command.CommandForm' renderer-type='com.webmethods.caf.faces.Form'>
+    <property name='defaultFocus' value='_first' />
+    <property name='id' value='assignToForm' />
+    <property name='rendered' value='#{LoanExpertTaskViewDefaultviewView.loanExpertTask.adhocRouting}' />
+    <control component-type='com.softwareag.caf.controls.mwsx.PeoplePickerDialog' renderer-type=''>
+      <design-time-attribute name='rolledUp' value='true' />
+      <property name='applyButtonActionExpression' value='#{LoanExpertTaskViewDefaultviewView.assignToPrincipals}' signature='java.lang.String action()' />
+      <property name='groupSearchAllowed' value='false' />
+      <property name='id' value='assignedPrincipalPicker' />
+      <property name='lazy' value='' />
+      <property name='progressDelay' value='' />
+      <property name='refreshOnShow' value='' />
+      <property name='rendered' value='false' />
+      <property name='suppressInputs' value='' />
+      <property name='targetValue' value='#{LoanExpertTaskViewDefaultviewView.principalList}' />
+      <property name='twoPass' value='' />
+      <facet name='popupPanel'>
+        <control component-type='javax.faces.NamingContainer' renderer-type=''>
+          <property name='id' value='assignTargetPickerPopup' />
+          <control component-type='com.webmethods.caf.faces.command.async.Link' renderer-type='com.webmethods.caf.faces.command.async.Link'>
+            <property name='id' value='showAvailability' />
+            <property name='onclick' value='CAF.Popup.hideAll();' />
+            <property name='refresh' value='personCalendarDialog' />
+            <property name='toggle' value='personCalendarDialog' />
+            <property name='value' value='#{activePreferencesBean.portletResourcesProvider[&quot;view.task.show.availability&quot;]}' />
+            <control component-type='javax.faces.Parameter' renderer-type=''>
+              <property name='name' value='personURI' />
+              <property name='value' value='#{row.principalURI}' />
+            </control>
+          </control>
+        </control>
+      </facet>
+    </control>
+    <control component-type='com.softwareag.caf.controls.mwsx.PersonCalendarDialog' renderer-type=''>
+      <design-time-attribute name='rolledUp' value='false' />
+      <property name='id' value='personCalendarDialog' />
+      <property name='personURI' value='#{param.personURI}' />
+      <property name='rendered' value='false' />
+    </control>
+  </control>
+</view>
