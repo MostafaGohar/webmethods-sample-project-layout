@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<NirvanaRealm name="umserver9000" exportDate="2020-06-17Z" comment="Realm configuration from umserver9000" version="10.1" buildInfo="10.1.0.0.96243">
+<NirvanaRealm name="umserver9000" exportDate="2020-06-25Z" comment="Realm configuration from umserver9000" version="10.1" buildInfo="10.1.0.0.96243">
     <RealmConfiguration>
         <ConfigGroup name="Audit Settings">
             <ConfigItem name="ChannelACL" value="true"/>
@@ -407,7 +407,7 @@
             </DurableSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="MyTopic" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="MyTopic" TTL="0" capacity="0" EID="5" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
@@ -424,7 +424,7 @@
             </ChannelPermissionSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="PERestartTopic" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="PERestartTopic" TTL="0" capacity="0" EID="88" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
@@ -436,7 +436,7 @@
             </DurableSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="TestTopic1_T" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="TestTopic1_T" TTL="0" capacity="0" EID="111" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
@@ -448,7 +448,7 @@
             </DurableSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="TestTopic2_T" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="TestTopic2_T" TTL="0" capacity="0" EID="58" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
@@ -467,7 +467,7 @@
             </ChannelPermissionSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="/naming/defaultContext" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/naming/defaultContext" TTL="0" capacity="0" EID="85" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" getLastEID="true" purgeEvents="true" subscribe="true" publish="true" useNamedSubcription="false" host="127.0.0.1" name="mostafagohar"/>
@@ -476,10 +476,1671 @@
             <ChannelKeySet>
                 <ChannelKeyEntry keyName="alias" keyDepth="1"/>
             </ChannelKeySet>
-            <EventsSet/>
+            <EventsSet>
+                <Event id="1">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1572880815375"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="JMS_my-channels_EnableMultiplexedConnections" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_RandomRNames" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_RetryCommit" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ConxExceptionOnRetryFailure" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_MaxReconnectAttempts" type="Integer" value="-1"/>
+                        <EventProp name="JMS_my-channels_EnableSharedDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSerialDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SharedDurableType" type="String" value="Shared"/>
+                        <EventProp name="JMS_my-channels_EnableSingleSharedDurableAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSingleQueueAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableDurablePriority" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncWritesToDisc" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncSendPersistent" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_InitialConnectionRetryCount" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncBatchSize" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_SyncTime" type="Integer" value="20"/>
+                        <EventProp name="JMS_my-channels_GlobalStoreCapacity" type="Integer" value="0"/>
+                        <EventProp name="JMS_my-channels_AutoAckCount" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_WindowSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_useInfiniteWindowSize" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_UnAckedSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_RedliveredSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_ThreadPoolSize" type="Integer" value="30"/>
+                        <EventProp name="JMS_my-channels_AutoReconnectAfterACL" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ImmediateReconnect" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ReconnectInterval" type="Long" value="2000"/>
+                        <EventProp name="JMS_my-channels_UseJMSEngine" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_DisconnectAfterClusterFailure" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ConnectionTimeout" type="Long" value="10000"/>
+                        <EventProp name="JMS_my-channels_PermittedKeepAlivesMissed" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncNamedTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AdapterBuffer" type="Integer" value="1310720"/>
+                        <EventProp name="JMS_my-channels_WriteHandler" type="Integer" value="3"/>
+                        <EventProp name="JMS_my-channels_SyncQueueAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_SyncTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AutoCreateResource" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_FollowMaster" type="Boolean" value="false"/>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="MyConnectionFactory"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.ConnectionFactory"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.ConnectionFactoryFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value="{&quot;JMS_my-channels_EnableMultiplexedConnections&quot;:[3,true],&quot;JMS_my-channels_RandomRNames&quot;:[3,false],&quot;JMS_my-channels_RetryCommit&quot;:[3,false],&quot;JMS_my-channels_ConxExceptionOnRetryFailure&quot;:[3,false],&quot;JMS_my-channels_MaxReconnectAttempts&quot;:[4,-1],&quot;JMS_my-channels_EnableSharedDurable&quot;:[3,false],&quot;JMS_my-channels_EnableSerialDurable&quot;:[3,false],&quot;JMS_my-channels_SharedDurableType&quot;:[0,&quot;Shared&quot;],&quot;JMS_my-channels_EnableSingleSharedDurableAck&quot;:[3,false],&quot;JMS_my-channels_EnableSingleQueueAck&quot;:[3,false],&quot;JMS_my-channels_EnableDurablePriority&quot;:[3,false],&quot;JMS_my-channels_SyncWritesToDisc&quot;:[3,false],&quot;JMS_my-channels_SyncSendPersistent&quot;:[3,false],&quot;JMS_my-channels_InitialConnectionRetryCount&quot;:[4,2],&quot;JMS_my-channels_SyncBatchSize&quot;:[4,50],&quot;JMS_my-channels_SyncTime&quot;:[4,20],&quot;JMS_my-channels_GlobalStoreCapacity&quot;:[4,0],&quot;JMS_my-channels_AutoAckCount&quot;:[4,50],&quot;JMS_my-channels_WindowSize&quot;:[4,100],&quot;JMS_my-channels_useInfiniteWindowSize&quot;:[3,false],&quot;JMS_my-channels_UnAckedSize&quot;:[4,100],&quot;JMS_my-channels_RedliveredSize&quot;:[4,100],&quot;JMS_my-channels_ThreadPoolSize&quot;:[4,30],&quot;JMS_my-channels_AutoReconnectAfterACL&quot;:[3,false],&quot;JMS_my-channels_ImmediateReconnect&quot;:[3,true],&quot;JMS_my-channels_ReconnectInterval&quot;:[1,2000],&quot;JMS_my-channels_UseJMSEngine&quot;:[3,true],&quot;JMS_my-channels_DisconnectAfterClusterFailure&quot;:[3,true],&quot;JMS_my-channels_ConnectionTimeout&quot;:[1,10000],&quot;JMS_my-channels_PermittedKeepAlivesMissed&quot;:[4,2],&quot;JMS_my-channels_SyncNamedTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AdapterBuffer&quot;:[4,1310720],&quot;JMS_my-channels_WriteHandler&quot;:[4,3],&quot;JMS_my-channels_SyncQueueAcks&quot;:[3,true],&quot;JMS_my-channels_SyncTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AutoCreateResource&quot;:[3,true],&quot;JMS_my-channels_FollowMaster&quot;:[3,false]}"/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="ConnectionFactory"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="nsp://localhost:9000/"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="2">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1572955278928"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="MyTopic"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="MyTopic"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="4">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573037309866"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="JMS_my-channels_EnableMultiplexedConnections" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_RandomRNames" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_RetryCommit" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ConxExceptionOnRetryFailure" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_MaxReconnectAttempts" type="Integer" value="-1"/>
+                        <EventProp name="JMS_my-channels_EnableSharedDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSerialDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SharedDurableType" type="String" value="Shared"/>
+                        <EventProp name="JMS_my-channels_EnableSingleSharedDurableAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSingleQueueAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableDurablePriority" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncWritesToDisc" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncSendPersistent" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_InitialConnectionRetryCount" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncBatchSize" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_SyncTime" type="Integer" value="20"/>
+                        <EventProp name="JMS_my-channels_GlobalStoreCapacity" type="Integer" value="0"/>
+                        <EventProp name="JMS_my-channels_AutoAckCount" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_WindowSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_useInfiniteWindowSize" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_UnAckedSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_RedliveredSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_ThreadPoolSize" type="Integer" value="30"/>
+                        <EventProp name="JMS_my-channels_AutoReconnectAfterACL" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ImmediateReconnect" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ReconnectInterval" type="Long" value="2000"/>
+                        <EventProp name="JMS_my-channels_UseJMSEngine" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_DisconnectAfterClusterFailure" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ConnectionTimeout" type="Long" value="10000"/>
+                        <EventProp name="JMS_my-channels_PermittedKeepAlivesMissed" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncNamedTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AdapterBuffer" type="Integer" value="1310720"/>
+                        <EventProp name="JMS_my-channels_WriteHandler" type="Integer" value="3"/>
+                        <EventProp name="JMS_my-channels_SyncQueueAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_SyncTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AutoCreateResource" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_FollowMaster" type="Boolean" value="false"/>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="local_um"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.ConnectionFactory"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.ConnectionFactoryFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value="{&quot;JMS_my-channels_EnableMultiplexedConnections&quot;:[3,true],&quot;JMS_my-channels_RandomRNames&quot;:[3,false],&quot;JMS_my-channels_RetryCommit&quot;:[3,false],&quot;JMS_my-channels_ConxExceptionOnRetryFailure&quot;:[3,false],&quot;JMS_my-channels_MaxReconnectAttempts&quot;:[4,-1],&quot;JMS_my-channels_EnableSharedDurable&quot;:[3,false],&quot;JMS_my-channels_EnableSerialDurable&quot;:[3,false],&quot;JMS_my-channels_SharedDurableType&quot;:[0,&quot;Shared&quot;],&quot;JMS_my-channels_EnableSingleSharedDurableAck&quot;:[3,false],&quot;JMS_my-channels_EnableSingleQueueAck&quot;:[3,false],&quot;JMS_my-channels_EnableDurablePriority&quot;:[3,false],&quot;JMS_my-channels_SyncWritesToDisc&quot;:[3,false],&quot;JMS_my-channels_SyncSendPersistent&quot;:[3,false],&quot;JMS_my-channels_InitialConnectionRetryCount&quot;:[4,2],&quot;JMS_my-channels_SyncBatchSize&quot;:[4,50],&quot;JMS_my-channels_SyncTime&quot;:[4,20],&quot;JMS_my-channels_GlobalStoreCapacity&quot;:[4,0],&quot;JMS_my-channels_AutoAckCount&quot;:[4,50],&quot;JMS_my-channels_WindowSize&quot;:[4,100],&quot;JMS_my-channels_useInfiniteWindowSize&quot;:[3,false],&quot;JMS_my-channels_UnAckedSize&quot;:[4,100],&quot;JMS_my-channels_RedliveredSize&quot;:[4,100],&quot;JMS_my-channels_ThreadPoolSize&quot;:[4,30],&quot;JMS_my-channels_AutoReconnectAfterACL&quot;:[3,false],&quot;JMS_my-channels_ImmediateReconnect&quot;:[3,true],&quot;JMS_my-channels_ReconnectInterval&quot;:[1,2000],&quot;JMS_my-channels_UseJMSEngine&quot;:[3,true],&quot;JMS_my-channels_DisconnectAfterClusterFailure&quot;:[3,true],&quot;JMS_my-channels_ConnectionTimeout&quot;:[1,10000],&quot;JMS_my-channels_PermittedKeepAlivesMissed&quot;:[4,2],&quot;JMS_my-channels_SyncNamedTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AdapterBuffer&quot;:[4,1310720],&quot;JMS_my-channels_WriteHandler&quot;:[4,3],&quot;JMS_my-channels_SyncQueueAcks&quot;:[3,true],&quot;JMS_my-channels_SyncTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AutoCreateResource&quot;:[3,true],&quot;JMS_my-channels_FollowMaster&quot;:[3,false]}"/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="ConnectionFactory"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="nsp://localhost:9000/"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="5">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573069496578"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="JMS_my-channels_EnableMultiplexedConnections" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_RandomRNames" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_RetryCommit" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ConxExceptionOnRetryFailure" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_MaxReconnectAttempts" type="Integer" value="-1"/>
+                        <EventProp name="JMS_my-channels_EnableSharedDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSerialDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SharedDurableType" type="String" value="Shared"/>
+                        <EventProp name="JMS_my-channels_EnableSingleSharedDurableAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSingleQueueAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableDurablePriority" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncWritesToDisc" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncSendPersistent" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_InitialConnectionRetryCount" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncBatchSize" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_SyncTime" type="Integer" value="20"/>
+                        <EventProp name="JMS_my-channels_GlobalStoreCapacity" type="Integer" value="0"/>
+                        <EventProp name="JMS_my-channels_AutoAckCount" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_WindowSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_useInfiniteWindowSize" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_UnAckedSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_RedliveredSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_ThreadPoolSize" type="Integer" value="30"/>
+                        <EventProp name="JMS_my-channels_AutoReconnectAfterACL" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ImmediateReconnect" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ReconnectInterval" type="Long" value="2000"/>
+                        <EventProp name="JMS_my-channels_UseJMSEngine" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_DisconnectAfterClusterFailure" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ConnectionTimeout" type="Long" value="10000"/>
+                        <EventProp name="JMS_my-channels_PermittedKeepAlivesMissed" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncNamedTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AdapterBuffer" type="Integer" value="1310720"/>
+                        <EventProp name="JMS_my-channels_WriteHandler" type="Integer" value="3"/>
+                        <EventProp name="JMS_my-channels_SyncQueueAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_SyncTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AutoCreateResource" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_FollowMaster" type="Boolean" value="false"/>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queueFactory"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.QueueConnectionFactory"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueConnectionFactoryFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value="{&quot;JMS_my-channels_EnableMultiplexedConnections&quot;:[3,true],&quot;JMS_my-channels_RandomRNames&quot;:[3,false],&quot;JMS_my-channels_RetryCommit&quot;:[3,false],&quot;JMS_my-channels_ConxExceptionOnRetryFailure&quot;:[3,false],&quot;JMS_my-channels_MaxReconnectAttempts&quot;:[4,-1],&quot;JMS_my-channels_EnableSharedDurable&quot;:[3,false],&quot;JMS_my-channels_EnableSerialDurable&quot;:[3,false],&quot;JMS_my-channels_SharedDurableType&quot;:[0,&quot;Shared&quot;],&quot;JMS_my-channels_EnableSingleSharedDurableAck&quot;:[3,false],&quot;JMS_my-channels_EnableSingleQueueAck&quot;:[3,false],&quot;JMS_my-channels_EnableDurablePriority&quot;:[3,false],&quot;JMS_my-channels_SyncWritesToDisc&quot;:[3,false],&quot;JMS_my-channels_SyncSendPersistent&quot;:[3,false],&quot;JMS_my-channels_InitialConnectionRetryCount&quot;:[4,2],&quot;JMS_my-channels_SyncBatchSize&quot;:[4,50],&quot;JMS_my-channels_SyncTime&quot;:[4,20],&quot;JMS_my-channels_GlobalStoreCapacity&quot;:[4,0],&quot;JMS_my-channels_AutoAckCount&quot;:[4,50],&quot;JMS_my-channels_WindowSize&quot;:[4,100],&quot;JMS_my-channels_useInfiniteWindowSize&quot;:[3,false],&quot;JMS_my-channels_UnAckedSize&quot;:[4,100],&quot;JMS_my-channels_RedliveredSize&quot;:[4,100],&quot;JMS_my-channels_ThreadPoolSize&quot;:[4,30],&quot;JMS_my-channels_AutoReconnectAfterACL&quot;:[3,false],&quot;JMS_my-channels_ImmediateReconnect&quot;:[3,true],&quot;JMS_my-channels_ReconnectInterval&quot;:[1,2000],&quot;JMS_my-channels_UseJMSEngine&quot;:[3,true],&quot;JMS_my-channels_DisconnectAfterClusterFailure&quot;:[3,true],&quot;JMS_my-channels_ConnectionTimeout&quot;:[1,10000],&quot;JMS_my-channels_PermittedKeepAlivesMissed&quot;:[4,2],&quot;JMS_my-channels_SyncNamedTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AdapterBuffer&quot;:[4,1310720],&quot;JMS_my-channels_WriteHandler&quot;:[4,3],&quot;JMS_my-channels_SyncQueueAcks&quot;:[3,true],&quot;JMS_my-channels_SyncTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AutoCreateResource&quot;:[3,true],&quot;JMS_my-channels_FollowMaster&quot;:[3,false]}"/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="QueueConnectionFactory"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="nsp://localhost:9000/"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="6">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573070043907"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="PEBroadcastTopic"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="PEBroadcastTopic"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="7">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573070044024"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="PERestartTopic"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="PERestartTopic"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="8">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573070746026"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="mockProject_mockProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="mockProject_mockProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="9">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573070746317"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="mockProject_mockProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="mockProject_mockProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="10">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573123370197"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="pleaseProject_pleaseProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="pleaseProject_pleaseProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="11">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573123370353"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="pleaseProject_pleaseProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="pleaseProject_pleaseProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="12">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573129919438"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanApplicationProject_LoanApplicationProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanApplicationProject_LoanApplicationProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="13">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573129919811"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanApplicationProject_LoanApplicationProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanApplicationProject_LoanApplicationProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="14">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225941795"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/conf_request"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/conf_request"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="15">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225941875"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/conf_change"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/conf_change"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="16">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225941916"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/cache_request"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/cache_request"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="17">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225941982"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/cache_change"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/cache_change"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="18">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942023"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/dca_event_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/dca_event_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="19">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942047"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/deployment_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/deployment_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="20">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942076"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/dimension_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/dimension_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="21">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942095"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/job_queue_change"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/job_queue_change"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="22">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942157"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/meta_names_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/meta_names_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="23">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942181"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/process_event_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/process_event_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="24">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942216"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/proc_err_meta_del"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/proc_err_meta_del"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="25">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942241"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/rule_change"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/rule_change"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="26">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942276"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="topic/process_model"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="topic/process_model"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="27">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942300"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/alg_state_persist"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/alg_state_persist"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="28">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942343"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/cache_reply"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/cache_reply"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="29">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942378"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/conf_reply"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/conf_reply"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="30">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942401"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/dca_event"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/dca_event"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="31">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942427"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/dca_dimension"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/dca_dimension"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="32">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942448"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/deployment"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/deployment"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="33">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942476"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/dimension_request"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/dimension_request"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="34">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942501"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/discovery_action"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/discovery_action"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="35">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942530"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/discovery_action_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/discovery_action_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="36">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942547"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/discovered_asset_change"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/discovered_asset_change"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="37">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942564"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/discovered_asset_change_response"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/discovered_asset_change_response"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="38">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942589"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/kpi_aggregate_diagnosis"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/kpi_aggregate_diagnosis"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="39">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942608"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/kpi_aggregate_stats"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/kpi_aggregate_stats"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="40">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942642"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/kpi_event"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/kpi_event"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="41">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942676"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/mapped_event"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/mapped_event"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="42">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942703"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/meta_names_request"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/meta_names_request"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="43">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942753"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/monitor_change_internal"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/monitor_change_internal"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="44">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942776"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/process_instance"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/process_instance"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="45">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942803"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_dim_disabled"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_dim_disabled"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="46">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942822"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_dim_event_eval"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_dim_event_eval"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="47">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942840"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_event"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_event"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="48">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942858"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_event_eval"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_event_eval"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="49">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942875"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_event_write"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_event_write"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="50">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942904"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_kpi"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_kpi"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="51">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942943"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_kpi_eval"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_kpi_eval"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="52">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942962"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_reading_eval"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_reading_eval"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="53">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942979"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_threshold"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_threshold"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="54">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225942995"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/rule_threshold_eval"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/rule_threshold_eval"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="55">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225943016"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/stats_persist"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/stats_persist"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="56">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225943056"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/subscription_registration"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/subscription_registration"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="57">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225943096"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/process_model_request"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/process_model_request"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="58">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573225943096"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="JMS_my-channels_EnableMultiplexedConnections" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_RandomRNames" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_RetryCommit" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ConxExceptionOnRetryFailure" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_MaxReconnectAttempts" type="Integer" value="-1"/>
+                        <EventProp name="JMS_my-channels_EnableSharedDurable" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_EnableSerialDurable" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SharedDurableType" type="String" value="Shared"/>
+                        <EventProp name="JMS_my-channels_EnableSingleSharedDurableAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableSingleQueueAck" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_EnableDurablePriority" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncWritesToDisc" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_SyncSendPersistent" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_InitialConnectionRetryCount" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncBatchSize" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_SyncTime" type="Integer" value="20"/>
+                        <EventProp name="JMS_my-channels_GlobalStoreCapacity" type="Integer" value="0"/>
+                        <EventProp name="JMS_my-channels_AutoAckCount" type="Integer" value="50"/>
+                        <EventProp name="JMS_my-channels_WindowSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_useInfiniteWindowSize" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_UnAckedSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_RedliveredSize" type="Integer" value="100"/>
+                        <EventProp name="JMS_my-channels_ThreadPoolSize" type="Integer" value="30"/>
+                        <EventProp name="JMS_my-channels_AutoReconnectAfterACL" type="Boolean" value="false"/>
+                        <EventProp name="JMS_my-channels_ImmediateReconnect" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ReconnectInterval" type="Long" value="2000"/>
+                        <EventProp name="JMS_my-channels_UseJMSEngine" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_DisconnectAfterClusterFailure" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_ConnectionTimeout" type="Long" value="10000"/>
+                        <EventProp name="JMS_my-channels_PermittedKeepAlivesMissed" type="Integer" value="2"/>
+                        <EventProp name="JMS_my-channels_SyncNamedTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AdapterBuffer" type="Integer" value="1310720"/>
+                        <EventProp name="JMS_my-channels_WriteHandler" type="Integer" value="3"/>
+                        <EventProp name="JMS_my-channels_SyncQueueAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_SyncTopicAcks" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_AutoCreateResource" type="Boolean" value="true"/>
+                        <EventProp name="JMS_my-channels_FollowMaster" type="Boolean" value="false"/>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="jms/optimize/connection_factory"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.ConnectionFactory"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.ConnectionFactoryFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value="{&quot;JMS_my-channels_EnableMultiplexedConnections&quot;:[3,true],&quot;JMS_my-channels_RandomRNames&quot;:[3,false],&quot;JMS_my-channels_RetryCommit&quot;:[3,false],&quot;JMS_my-channels_ConxExceptionOnRetryFailure&quot;:[3,false],&quot;JMS_my-channels_MaxReconnectAttempts&quot;:[4,-1],&quot;JMS_my-channels_EnableSharedDurable&quot;:[3,true],&quot;JMS_my-channels_EnableSerialDurable&quot;:[3,false],&quot;JMS_my-channels_SharedDurableType&quot;:[0,&quot;Shared&quot;],&quot;JMS_my-channels_EnableSingleSharedDurableAck&quot;:[3,false],&quot;JMS_my-channels_EnableSingleQueueAck&quot;:[3,false],&quot;JMS_my-channels_EnableDurablePriority&quot;:[3,false],&quot;JMS_my-channels_SyncWritesToDisc&quot;:[3,false],&quot;JMS_my-channels_SyncSendPersistent&quot;:[3,true],&quot;JMS_my-channels_InitialConnectionRetryCount&quot;:[4,2],&quot;JMS_my-channels_SyncBatchSize&quot;:[4,50],&quot;JMS_my-channels_SyncTime&quot;:[4,20],&quot;JMS_my-channels_GlobalStoreCapacity&quot;:[4,0],&quot;JMS_my-channels_AutoAckCount&quot;:[4,50],&quot;JMS_my-channels_WindowSize&quot;:[4,100],&quot;JMS_my-channels_useInfiniteWindowSize&quot;:[3,false],&quot;JMS_my-channels_UnAckedSize&quot;:[4,100],&quot;JMS_my-channels_RedliveredSize&quot;:[4,100],&quot;JMS_my-channels_ThreadPoolSize&quot;:[4,30],&quot;JMS_my-channels_AutoReconnectAfterACL&quot;:[3,false],&quot;JMS_my-channels_ImmediateReconnect&quot;:[3,true],&quot;JMS_my-channels_ReconnectInterval&quot;:[1,2000],&quot;JMS_my-channels_UseJMSEngine&quot;:[3,true],&quot;JMS_my-channels_DisconnectAfterClusterFailure&quot;:[3,true],&quot;JMS_my-channels_ConnectionTimeout&quot;:[1,10000],&quot;JMS_my-channels_PermittedKeepAlivesMissed&quot;:[4,2],&quot;JMS_my-channels_SyncNamedTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AdapterBuffer&quot;:[4,1310720],&quot;JMS_my-channels_WriteHandler&quot;:[4,3],&quot;JMS_my-channels_SyncQueueAcks&quot;:[3,true],&quot;JMS_my-channels_SyncTopicAcks&quot;:[3,true],&quot;JMS_my-channels_AutoCreateResource&quot;:[3,true],&quot;JMS_my-channels_FollowMaster&quot;:[3,false]}"/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="ConnectionFactory"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="nsp://localhost:9000"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="59">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573236743264"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Event/WebM/Process/V2_0/ProcessInstanceChange"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Event/WebM/Process/V2_0/ProcessInstanceChange"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="60">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573236743316"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Event/WebM/Process/V2_0/ProcessStepInstanceChange"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Event/WebM/Process/V2_0/ProcessStepInstanceChange"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="61">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573236743368"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Event/WebM/Process/V2_0/ProcessInstanceError"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Event/WebM/Process/V2_0/ProcessInstanceError"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="62">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573236743426"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Event/WebM/Process/V2_0/ProcessStepInstanceError"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Event/WebM/Process/V2_0/ProcessStepInstanceError"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="63">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573236743526"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="queue/process_instance_0"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="queue/process_instance_0"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="64">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573237708500"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanApplicationProject_testingProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanApplicationProject_testingProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="65">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573237708623"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanApplicationProject_testingProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanApplicationProject_testingProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="66">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1573322018511"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Notification_Gohar_Q"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Notification_Gohar_Q"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="67">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1574942654123"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="PaymenttProject_BillingProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="PaymenttProject_BillingProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="68">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1574942654552"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="PaymenttProject_BillingProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="PaymenttProject_BillingProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="69">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1575372689793"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mohamedraafat"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="MyQueue"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="MyQueue"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="70">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1575387387470"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mohamedraafat"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Notification_Mohamed_Q"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Notification_Mohamed_Q"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="71">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1575881226595"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mohamedraafat"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="72">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1575881227111"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mohamedraafat"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanProcessApplicationProject_LoanApplicationProcess_MR_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanProcessApplicationProject_LoanApplicationProcess_MR_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="73">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1576062636510"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mohamedraafat"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUEEX_531483"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUEEX_531483"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="74">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1577113201412"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="ChildProcessTestProject_ParentProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="ChildProcessTestProject_ParentProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="75">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1577113201692"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="ChildProcessTestProject_ParentProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="ChildProcessTestProject_ParentProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="76">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1577114903212"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="ChildProcessTestProject_ChildProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="ChildProcessTestProject_ChildProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="77">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1577114903290"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="ChildProcessTestProject_ChildProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="ChildProcessTestProject_ChildProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="78">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1577122440133"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="BillingProject_BillingProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="BillingProject_BillingProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="79">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1577122440347"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="BillingProject_BillingProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="BillingProject_BillingProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="80">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1580279766188"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="TestTopic1_T"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="TestTopic1_T"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="81">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1580280058471"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="Gohar_Raafat_Q"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="Gohar_Raafat_Q"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="82">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1580280249996"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="TestTopic2_T"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Topic"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.TopicFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Topic"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="TestTopic2_T"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="83">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1592394269540"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="DevOpsDemoProcess_DevProcess_SUBQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="DevOpsDemoProcess_DevProcess_SUBQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="84">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1592394269948"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="DevOpsDemoProcess_DevProcess_TRANSQUEUE"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="DevOpsDemoProcess_DevProcess_TRANSQUEUE"/>
+                    </EventPropSet>
+                </Event>
+                <Event id="85">
+                    <EventAttribSet>
+                        <EventAttrib name="nrvpub.time" type="Long" value="1593000125069"/>
+                        <EventAttrib name="nrvpub.host" type="String" value="127.0.0.1"/>
+                        <EventAttrib name="nrvpub.name" type="String" value="mostafagohar"/>
+                        <EventAttrib name="JMSDeliveryMode" type="String" value="PERSISTENT"/>
+                        <EventAttrib name="JMSPriority" type="Byte" value="4"/>
+                    </EventAttribSet>
+                    <EventPropSet>
+                        <EventProp name="alias.type" type="Integer" value="1"/>
+                        <EventProp name="alias" type="String" value="testQueueDevOps"/>
+                        <EventProp name="alias.reference.classname" type="String" value="javax.jms.Queue"/>
+                        <EventProp name="alias.reference.factoryclass" type="String" value="com.pcbsys.nirvana.nJMS.QueueFactory"/>
+                        <EventProp name="alias.reference.url" type="String" value=""/>
+                        <EventProp name="alias.stringRefAddr.type" type="String" value="Queue"/>
+                        <EventProp name="alias.stringRefAddr.addr" type="String" value="testQueueDevOps"/>
+                    </EventPropSet>
+                </Event>
+            </EventsSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="/topic/cache_change" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/topic/cache_change" TTL="0" capacity="0" EID="6" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
@@ -488,7 +2149,7 @@
             </ChannelPermissionSet>
         </ChannelEntry>
         <ChannelEntry>
-            <ChannelAttributesEntry name="/topic/cache_request" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/topic/cache_request" TTL="0" capacity="0" EID="99" clusterWide="false" jmsEngine="true" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <ChannelPermissionSet>
                 <ChannelACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" getLastEID="false" purgeEvents="false" subscribe="false" publish="false" useNamedSubcription="false" host="*" name="*"/>
@@ -690,8 +2351,9 @@
             <DurableSet>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildProcessTestProject__ChildProcess__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__LoanChildTest__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
-                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildTestProject__ChildProcessTest__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__testingProcess__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##DevOpsDemoProcess__TestDevOpsProcess__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildTestProject__ChildProcessTest__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##BillingProject__ChildBilling__Default__subscriptionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
             </DurableSet>
         </ChannelEntry>
@@ -715,6 +2377,7 @@
             <DurableSet>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__LoanChildTest__LoanChildTest_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##LoanApplicationProject__testingProcess__testingProcess_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
+                <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##DevOpsDemoProcess__TestDevOpsProcess__TestDevOpsProcess_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##GoharProject__LoanApplicationProcess_1__LoanApplicationProcess_1_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##ChildTestProject__ChildProcessTest__ChildProcessTest_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
                 <durableEntry name="J_jRQtEolDEurgAVIwwwADXaZQs_##BillingProject__ChildBilling__ChildBilling_1__Default__transitionTrigger" EID="0" outstandingEvents="0" clusterWide="false" persistent="true" priorityEnabled="false" queued="false" shared="true" serial="false"/>
@@ -831,7 +2494,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="ChildProcessTestProject_ParentProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="ChildProcessTestProject_ParentProcess_SUBQUEUE" TTL="0" capacity="0" EID="11" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
@@ -871,7 +2534,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="LoanApplicationProject_LoanApplicationProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="LoanApplicationProject_LoanApplicationProcess_SUBQUEUE" TTL="0" capacity="0" EID="186" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
@@ -879,7 +2542,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="LoanApplicationProject_LoanApplicationProcess_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="LoanApplicationProject_LoanApplicationProcess_TRANSQUEUE" TTL="0" capacity="0" EID="46" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
@@ -903,7 +2566,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUE" TTL="0" capacity="0" EID="12" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
@@ -911,7 +2574,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUEEX_531483" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_SUBQUEUEEX_531483" TTL="0" capacity="0" EID="2" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -920,7 +2583,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_TRANSQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="LoanProcessApplicationProject_LoanApplicationProcess_MR_TRANSQUEUE" TTL="0" capacity="0" EID="18" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
@@ -928,7 +2591,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="MyQueue" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="MyQueue" TTL="0" capacity="0" EID="192" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
@@ -936,7 +2599,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="Notification_Gohar_Q" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="Notification_Gohar_Q" TTL="0" capacity="0" EID="1" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
@@ -944,7 +2607,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="Notification_Mohamed_Q" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="Notification_Mohamed_Q" TTL="0" capacity="0" EID="1" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mohamedraafat"/>
@@ -952,7 +2615,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="PaymenttProject_BillingProcess_SUBQUEUE" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="PaymenttProject_BillingProcess_SUBQUEUE" TTL="0" capacity="0" EID="8" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
@@ -965,6 +2628,14 @@
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
                 <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="QQQQQQQQQQQQQQQ" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
@@ -1001,7 +2672,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/cache_reply" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/cache_reply" TTL="0" capacity="0" EID="113" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1019,7 +2690,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/dca_dimension" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/dca_dimension" TTL="0" capacity="0" EID="12" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1109,7 +2780,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/kpi_event" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/kpi_event" TTL="0" capacity="0" EID="5837" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1190,7 +2861,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/rule_event" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/rule_event" TTL="0" capacity="0" EID="5794" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1217,7 +2888,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/rule_kpi" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/rule_kpi" TTL="0" capacity="0" EID="781" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1226,7 +2897,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/rule_kpi_eval" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/rule_kpi_eval" TTL="0" capacity="0" EID="152" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1244,7 +2915,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/queue/rule_threshold" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/queue/rule_threshold" TTL="0" capacity="0" EID="5863" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="true" purge="false" peek="false" push="false" pop="false" host="*" name="*"/>
@@ -1280,7 +2951,7 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/temp/queue19340000000005" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/temp/queue199f3300000003" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
@@ -1288,7 +2959,15 @@
             </QueuePermissionSet>
         </QueueEntry>
         <QueueEntry>
-            <ChannelAttributesEntry name="/temp/queue1949aa00000006" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <ChannelAttributesEntry name="/temp/queue19a06e00000004" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
+            <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
+            <QueuePermissionSet>
+                <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
+                <QueueGroupACLEntry listACLEntries="false" modifyACLEntries="false" fullControl="false" purge="false" peek="true" push="false" pop="false" groupname="Everyone"/>
+            </QueuePermissionSet>
+        </QueueEntry>
+        <QueueEntry>
+            <ChannelAttributesEntry name="testQueueDevOps" TTL="0" capacity="0" EID="0" clusterWide="false" jmsEngine="false" mergeEngine="false" type="MIXED_TYPE"/>
             <StorePropertiesEntry HonorCapacityWhenFull="true" SyncOnEachWrite="false" SyncMaxBatchSize="0" SyncBatchTime="0" PerformAutomaticMaintenance="true" EnableCaching="true" CacheOnReload="true" EnableReadBuffering="true" ReadBufferSize="10240" Priority="4" EnableMulticast="false" StampDictionary="0"/>
             <QueuePermissionSet>
                 <QueueACLEntry listACLEntries="true" modifyACLEntries="true" fullControl="true" purge="true" peek="true" push="true" pop="true" host="127.0.0.1" name="mostafagohar"/>
